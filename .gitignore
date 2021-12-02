@@ -1,2 +1,7 @@
-node_modules
-public
+node_modules/
+public/
+.cache/
+.env/
+.DS_Store/
+coverage/
+.vscode/
