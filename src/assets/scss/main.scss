@@ -1,2 +1,20 @@
-$primary: red;
-@import "~bootstrap/scss/bootstrap";
+@import "utils/variables";
+
+@import "./vendors/bootsrap";
+
+// @import "./layout/navigation";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/forms";
+
+@import "./components/buttons";
+// @import "./components/carousel";
+// @import "./components/cover";
+@import "./components/dropdown";
+@import "./components/slider";
+
+@import "./pages/home";
+// @import "./pages/contact";
+
+@import "./theme/theme";
+// @import "./themes/admin";
