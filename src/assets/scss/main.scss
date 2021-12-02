@@ -2,6 +2,11 @@
 
 @import "./vendors/bootsrap";
 
+@font-face {
+  font-family: poppins;
+  src: url(./font/Poppins-Regular.ttf);
+}
+
 // @import "./layout/navigation";
 @import "./layout/header";
 @import "./layout/footer";
@@ -18,3 +23,7 @@
 
 @import "./theme/theme";
 // @import "./themes/admin";
+
+body {
+  font-family: popins;
+}
