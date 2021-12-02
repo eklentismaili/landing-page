@@ -1,9 +1,9 @@
-
+import "./assets/scss/main.scss"
 
 const App = () => {
     return (
         <div>
-            hellooo
+            <button className="btn btn-primary">hi</button>
         </div>
     )
 }
