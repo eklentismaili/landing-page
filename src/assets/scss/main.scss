@@ -1,4 +1,5 @@
-@import "utils/variables";
+@import "./utils/variables";
+@import "./utils/utils";
 
 @import "./vendors/bootsrap";
 
@@ -24,6 +25,16 @@
 @import "./theme/theme";
 // @import "./themes/admin";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: popins;
+  font-family: poppins;
+  width: 100vw !important;
+  overflow-x: hidden;
+}
+
+.wrapper-page {
+  position: relative;
 }
