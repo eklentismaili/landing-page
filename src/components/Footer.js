@@ -69,7 +69,7 @@ function Footer() {
               <p className="copyright-text">
                 Copyright &copy; {new Date().getFullYear()} All Rights Reserved
                 by
-                <a href="#">EI</a>
+                <a href="#" className="copyright_owner">EI</a>
               </p>
             </div>
           </div>

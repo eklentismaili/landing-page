@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
+import Calendar from "./pages/Calendar";
 import Footer from "./components/Footer";
 import "./assets/scss/main.scss";
 
@@ -15,7 +16,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/calendar" element={<Calendar />} />
           </Routes>
         </div>
 
@@ -31,13 +32,6 @@ const About = () => {
   return (
     <div>
       <h1>About</h1>
-    </div>
-  );
-};
-const Blog = () => {
-  return (
-    <div>
-      <h1>Blog</h1>
     </div>
   );
 };

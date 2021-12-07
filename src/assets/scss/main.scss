@@ -1,3 +1,5 @@
+@import "calend/dist/styles/index.css"; // import styles
+
 @import "./utils/variables";
 @import "./utils/utils";
 
@@ -20,7 +22,7 @@
 @import "./components/slider";
 
 @import "./pages/home";
-// @import "./pages/contact";
+@import "./pages/calendar";
 
 @import "./theme/theme";
 // @import "./themes/admin";
@@ -33,4 +35,5 @@ body {
   font-family: poppins;
   width: 100vw !important;
   overflow-x: hidden;
+  background-color: #f7f7f7;
 }

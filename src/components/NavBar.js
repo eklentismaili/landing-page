@@ -53,6 +53,15 @@ const NavBar = () => {
                   About
                 </Link>
               </li>
+              <li>
+                <Link
+                  className="mainNavLink"
+                  to="/calendar"
+                  onClick={handleSidebar}
+                >
+                  Calendar
+                </Link>
+              </li>
             </ul>
           </nav>
           <button
