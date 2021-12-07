@@ -1,9 +1,7 @@
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import useClickOutside from "./useClickOutside";
-import logo from "../assets/images/logo.png";
-
-
+import logo from "../assets/images/logo.svg";
 
 const NavBar = () => {
   const [sideBar, setSideBar] = useState(false);
@@ -14,8 +12,8 @@ const NavBar = () => {
   };
 
   useClickOutside(modalRef, () => {
-    if(sideBar) setSideBar(false);
-  })
+    if (sideBar) setSideBar(false);
+  });
 
   return (
     <div>
@@ -28,7 +26,7 @@ const NavBar = () => {
           </span>
           <nav>
             <ul
-            ref={modalRef}
+              ref={modalRef}
               className="mainNav"
               style={sideBar ? { transform: "translateX(0)" } : null}
             >

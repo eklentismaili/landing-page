@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 import "./assets/scss/main.scss";
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
       <BrowserRouter>
         <NavBar />
 
-        <div className="pages-margin">
+        <div className="pages-wrapper">
           <Routes>
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<Home />} />
@@ -17,6 +18,8 @@ const App = () => {
             <Route path="/blog" element={<Blog />} />
           </Routes>
         </div>
+
+        <Footer></Footer>
       </BrowserRouter>
     </div>
   );

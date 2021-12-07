@@ -16,7 +16,7 @@ import homeServicesImg8 from "../assets/images/services/diving.jpeg";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home pages">
       <section className="home-banner text-center py-5">
         <div className="container py-5">
           <div className="row">
@@ -30,6 +30,9 @@ const Home = () => {
                 className="carousel-wrapper"
                 showThumbs={false}
                 autoPlay={true}
+                emulateTouch={true}
+                showIndicators={false}
+                infiniteLoop={true}
               >
                 <div>
                   <img src={homeBannerImg1} />
@@ -51,11 +54,19 @@ const Home = () => {
       <section className="home-about py-5 text-center">
         <div className="container">
           <div className="row">
-          <h1>About Us</h1>
-              <p className="pb-5">We live for the nature</p>
-              <div className="col-md-6">
-              <p className="text-start pb-3">Lorem ipsum dolor sit amet consectetur adipiscing elitsed do esectetur adipiscing elitsed do eiusmoiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris scing elitsed do esectetur adipiscing elite nature.</p>
-              <Link to="/about" className="text-center">Read More</Link>
+            <h1 className="text-color-blue">About Us</h1>
+            <p className="pb-5 text-color-blue">We live for the nature</p>
+            <div className="col-md-6">
+              <p className="text-start pb-3">
+                Lorem ipsum dolor sit amet consectetur adipiscing elitsed do
+                esectetur adipiscing elitsed do eiusmoiusmod tempor incididunt
+                utlabore et dolore magna aliqua. Utenim ad minim veniam quis
+                nostrud exercitation ullamco laboris scing elitsed do esectetur
+                adipiscing elite nature.
+              </p>
+              <Link to="/about" className="text-center">
+                Read More
+              </Link>
             </div>
             <div className="col-md-6">
               <Accordion defaultActiveKey="0" flush>
@@ -106,19 +117,30 @@ const Home = () => {
       <section className="home-latest-trips py-5">
         <div className="container">
           <div className="row">
-          <div className="col-md-6">
-              <h3>Latest Trips</h3>
-              <p className="pb-3">Explore the unexplored world</p>
-              <p className="text-start pb-3">Lorem ipsum dolor sit amet consectetur adipiscing elitsed do esectetur adipiscing elitsed do eiusmoiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris scing elitsed do esectetur adipiscing elite nature.</p>
-              <Link to="/about" className="text-center">View All</Link>
+            <div className="col-md-6">
+              <h3 className="text-color-blue">Latest Trips</h3>
+              <p className="pb-3 text-color-blue">
+                Explore the unexplored world
+              </p>
+              <p className="text-start pb-3">
+                Lorem ipsum dolor sit amet consectetur adipiscing elitsed do
+                esectetur adipiscing elitsed do eiusmoiusmod tempor incididunt
+                utlabore et dolore magna aliqua. Utenim ad minim veniam quis
+                nostrud exercitation ullamco laboris scing elitsed do esectetur
+                adipiscing elite nature.
+              </p>
+              <Link to="/about" className="text-center">
+                View All
+              </Link>
             </div>
             <div className="col-md-6 text-start">
-            <Carousel
+              <Carousel
                 className="carousel-trips-items"
                 showThumbs={false}
-                autoPlay={false}
+                autoPlay={true}
                 emulateTouch={true}
                 showIndicators={false}
+                infiniteLoop={true}
               >
                 <div className="carousel-trips-item">
                   <img src={homeBannerImg1} />
@@ -136,9 +158,11 @@ const Home = () => {
                       <span>Difficulty</span>
                     </div>
                   </div>
-                  <h5 className="text-start">Theth</h5>
-                  <p className="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt</p>
+                  <h5 className="text-start text-color-blue">Theth</h5>
+                  <p className="text-start">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt
+                  </p>
                 </div>
                 <div className="carousel-trips-item">
                   <img src={homeBannerImg2} />
@@ -156,9 +180,11 @@ const Home = () => {
                       <span>Difficulty</span>
                     </div>
                   </div>
-                  <h5 className="text-start">Jezerce</h5>
-                  <p className="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt</p>
+                  <h5 className="text-start text-color-blue">Jezerce</h5>
+                  <p className="text-start">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt
+                  </p>
                 </div>
                 <div className="carousel-trips-item">
                   <img src={homeBannerImg3} />
@@ -176,9 +202,11 @@ const Home = () => {
                       <span>Difficulty</span>
                     </div>
                   </div>
-                  <h5 className="text-start">Korab</h5>
-                  <p className="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt</p>
+                  <h5 className="text-start text-color-blue">Korab</h5>
+                  <p className="text-start">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt
+                  </p>
                 </div>
                 <div className="carousel-trips-item">
                   <img src={homeBannerImg4} />
@@ -196,9 +224,11 @@ const Home = () => {
                       <span>Difficulty</span>
                     </div>
                   </div>
-                  <h5 className="text-start">Lepushe</h5>
-                  <p className="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt</p>
+                  <h5 className="text-start text-color-blue">Lepushe</h5>
+                  <p className="text-start">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt
+                  </p>
                 </div>
               </Carousel>
             </div>
@@ -207,47 +237,47 @@ const Home = () => {
       </section>
       <section className="home-services py-5 text-center">
         <div className="container">
-        <h1>Services</h1>
-              <p className="pb-5">We provide the best experience</p>
+          <h1 className="text-color-blue">Services</h1>
+          <p className="pb-5 text-color-blue">We provide the best experience</p>
           <div className="row home-services-info">
             <div className="col-6 col-md-3">
               <img src={homeServicesImg1} />
-              <h5>Hiking</h5>
+              <h5 className="text-color-blue">Hiking</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
-            <img src={homeServicesImg2} />
-            <h5>Rafting</h5>
+              <img src={homeServicesImg2} />
+              <h5 className="text-color-blue">Rafting</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
-            <img src={homeServicesImg3} />
-            <h5>Flying</h5>
+              <img src={homeServicesImg3} />
+              <h5 className="text-color-blue">Flying</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
-            <img src={homeServicesImg4} />
-            <h5>Ski</h5>
+              <img src={homeServicesImg4} />
+              <h5 className="text-color-blue">Ski</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
-            <img src={homeServicesImg5} />
-            <h5>OFF Road</h5>
+              <img src={homeServicesImg5} />
+              <h5 className="text-color-blue">OFF Road</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
-            <img src={homeServicesImg6} />
-            <h5>Trakking</h5>
+              <img src={homeServicesImg6} />
+              <h5 className="text-color-blue">Trakking</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
-            <img src={homeServicesImg7} />
-            <h5>Explore</h5>
+              <img src={homeServicesImg7} />
+              <h5 className="text-color-blue">Explore</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
-            <img src={homeServicesImg8} />
-            <h5>Scuba Diving</h5>
+              <img src={homeServicesImg8} />
+              <h5 className="text-color-blue">Scuba Diving</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
           </div>
