@@ -1,11 +1,3 @@
-.home {
-  background-image: url("../images/white-lightblue-bg.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 .home-banner {
   background-image: url("../images/download.jpeg");
   background-position: center;
@@ -45,8 +37,8 @@
 }
 
 .home-services-info > div {
-  border-bottom: 2px solid $medium-blue;
-  border-right: 2px solid $medium-blue;
+  border-bottom: 2px solid $light-blue;
+  border-right: 2px solid $light-blue;
   margin-bottom: 20px;
   padding: 1em;
 

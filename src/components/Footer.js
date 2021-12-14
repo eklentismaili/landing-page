@@ -10,7 +10,7 @@ function Footer() {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-5">
-              <h6 className="text-color-yellow">Alpine Albania Adventures</h6>
+              <h6>Alpine Albania Adventures</h6>
               <ul className="footer-links footer-contact-links">
                 <li>
                   <span>Address:</span> 

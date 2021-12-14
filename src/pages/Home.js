@@ -251,17 +251,17 @@ const Home = () => {
           <div className="row home-services-info">
             <div className="col-6 col-md-3">
               <img src={homeServicesImg1} />
-              <h5 className="text-color-blue">Hiking</h5>
+              <h5 className="text-color-blue">Hike</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
               <img src={homeServicesImg2} />
-              <h5 className="text-color-blue">Rafting</h5>
+              <h5 className="text-color-blue">Raft</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
               <img src={homeServicesImg3} />
-              <h5 className="text-color-blue">Flying</h5>
+              <h5 className="text-color-blue">Fly</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
@@ -271,12 +271,12 @@ const Home = () => {
             </div>
             <div className="col-6 col-md-3">
               <img src={homeServicesImg5} />
-              <h5 className="text-color-blue">OFF Road</h5>
+              <h5 className="text-color-blue">Off Road</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
               <img src={homeServicesImg6} />
-              <h5 className="text-color-blue">Trakking</h5>
+              <h5 className="text-color-blue">Traks</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
             <div className="col-6 col-md-3">
@@ -286,7 +286,7 @@ const Home = () => {
             </div>
             <div className="col-6 col-md-3">
               <img src={homeServicesImg8} />
-              <h5 className="text-color-blue">Scuba Diving</h5>
+              <h5 className="text-color-blue">Scuba Dive</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
           </div>

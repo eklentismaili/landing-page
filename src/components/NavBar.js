@@ -38,15 +38,6 @@ const NavBar = () => {
               <li>
                 <Link
                   className="mainNavLink"
-                  to="/contact"
-                  onClick={handleSidebar}
-                >
-                  Contact 2
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="mainNavLink"
                   to="/about"
                   onClick={handleSidebar}
                 >
@@ -60,6 +51,24 @@ const NavBar = () => {
                   onClick={handleSidebar}
                 >
                   Calendar
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="mainNavLink"
+                  to="/packages"
+                  onClick={handleSidebar}
+                >
+                  Packages
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="mainNavLink"
+                  to="/contact"
+                  onClick={handleSidebar}
+                >
+                  Contact Us
                 </Link>
               </li>
               <li>

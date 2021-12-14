@@ -10,24 +10,23 @@
   src: url(./font/Montserrat-Regular.ttf);
 }
 
-// @import "./layout/navigation";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/forms";
 
 @import "./components/buttons";
-// @import "./components/carousel";
-// @import "./components/cover";
 @import "./components/dropdown";
 @import "./components/slider";
 @import "./components/single-line";
 
 @import "./pages/home";
+@import "./pages/about";
 @import "./pages/calendar";
+@import "./pages/packages";
+@import "./pages/contact";
 @import "./pages/privacy";
 
 @import "./theme/theme";
-// @import "./themes/admin";
 
 html {
   scroll-behavior: smooth;
