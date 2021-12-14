@@ -8,10 +8,10 @@
   position: absolute;
   width: 100%;
   z-index: 3;
-  :after {
+  > :after {
     position: absolute;
     content: "";
-    bottom: -250px;
+    bottom: -298px;
     height: 40px;
     width: 1px;
   }
@@ -21,10 +21,14 @@
   color: $medium-blue;
 }
 
+.text-color-yellow {
+  color: $yellow;
+}
+
 @media (max-width: 991px) {
   .pages {
     :after {
-      bottom: -320px;
+      bottom: -371px;
     }
   }
 }
@@ -32,7 +36,7 @@
 @media (max-width: 767px) {
   .pages {
     :after {
-      bottom: -523.5px;
+      bottom: -579.5px;
     }
   }
 }
@@ -40,7 +44,7 @@
 @media (max-width: 367px) {
   .pages {
     :after {
-      bottom: -583.5px;
+      bottom: -646.5px;
     }
   }
 }

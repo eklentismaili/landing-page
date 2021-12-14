@@ -1,3 +1,4 @@
+import SingleLine from "../components/SingleLine";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import Accordion from "react-bootstrap/Accordion";
@@ -21,8 +22,9 @@ const Home = () => {
         <div className="container py-5">
           <div className="row">
             <div className="col d-flex flex-column align-items-center">
-              <h1 className="pb-5">Alpine Albania Adventures</h1>
-              <p className="pb-5">
+              <h1>Alpine Albania Adventures</h1>
+              <SingleLine/>
+              <p className="py-5">
                 Do not follow where the path may lead. Go instead where there is
                 no path and leave a trail
               </p>
@@ -33,6 +35,8 @@ const Home = () => {
                 emulateTouch={true}
                 showIndicators={false}
                 infiniteLoop={true}
+                showArrows={false}
+                showStatus={false}
               >
                 <div>
                   <img src={homeBannerImg1} />
@@ -55,7 +59,8 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <h1 className="text-color-blue">About Us</h1>
-            <p className="pb-5 text-color-blue">We live for the nature</p>
+            <SingleLine />
+            <p className="pb-md-5 pb-3 text-color-blue">We live for the nature</p>
             <div className="col-md-6">
               <p className="text-start pb-3">
                 Lorem ipsum dolor sit amet consectetur adipiscing elitsed do
@@ -64,11 +69,11 @@ const Home = () => {
                 nostrud exercitation ullamco laboris scing elitsed do esectetur
                 adipiscing elite nature.
               </p>
-              <Link to="/about" className="text-center">
+              <Link to="/about">
                 Read More
               </Link>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 pt-4 pt-md-0">
               <Accordion defaultActiveKey="0" flush>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>Our Mountains</Accordion.Header>
@@ -114,14 +119,15 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="home-latest-trips py-5">
+      <section className="home-latest-trips py-5 text-center">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
-              <h3 className="text-color-blue">Latest Trips</h3>
-              <p className="pb-3 text-color-blue">
+          <h2 className="text-color-blue text-center">Latest Trips</h2>
+              <SingleLine />
+              <p className="pb-3 text-color-blue text-center">
                 Explore the unexplored world
               </p>
+            <div className="col-md-6">
               <p className="text-start pb-3">
                 Lorem ipsum dolor sit amet consectetur adipiscing elitsed do
                 esectetur adipiscing elitsed do eiusmoiusmod tempor incididunt
@@ -133,7 +139,7 @@ const Home = () => {
                 View All
               </Link>
             </div>
-            <div className="col-md-6 text-start">
+            <div className="col-md-6 text-start pt-4 pt-md-0">
               <Carousel
                 className="carousel-trips-items"
                 showThumbs={false}
@@ -141,6 +147,8 @@ const Home = () => {
                 emulateTouch={true}
                 showIndicators={false}
                 infiniteLoop={true}
+                showArrows={false}
+                showStatus={false}
               >
                 <div className="carousel-trips-item">
                   <img src={homeBannerImg1} />
@@ -238,6 +246,7 @@ const Home = () => {
       <section className="home-services py-5 text-center">
         <div className="container">
           <h1 className="text-color-blue">Services</h1>
+          <SingleLine />
           <p className="pb-5 text-color-blue">We provide the best experience</p>
           <div className="row home-services-info">
             <div className="col-6 col-md-3">

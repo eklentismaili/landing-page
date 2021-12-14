@@ -1,4 +1,7 @@
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -7,12 +10,21 @@ function Footer() {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-5">
-              <h6>Alpine Albania Adventures</h6>
-              <p className="text-justify">
-                Lorem ipsum dolor sit amet consectetur adipiscing elitsed do
-                esectetur adipiscing elitsed do eiusmoiusmod tempor incididunt
-                utlabore et dolore magna aliqua.
-              </p>
+              <h6 className="text-color-yellow">Alpine Albania Adventures</h6>
+              <ul className="footer-links footer-contact-links">
+                <li>
+                  <span>Address:</span> 
+                  <a href="#">Rruga e Durresit, Pallati 102 , Tirana, Albania</a>
+                </li>
+                <li>
+                  <span>Quick Contact:</span> 
+                <a href="#">+355 69 20 60 120</a>
+                </li>
+                <li>
+                  <span>Email Us:</span>
+                <a href="#">info@albania-alpine-adventure.com</a>
+                </li>
+              </ul>
             </div>
 
             <div className="col-xs-6 col-md-3">
@@ -40,22 +52,17 @@ function Footer() {
               <ul className="social-icons">
                 <li>
                   <a className="facebook" href="#">
-                    <i className="fa fa-facebook"></i>
+                  <FontAwesomeIcon icon={faFacebookF} />
                   </a>
                 </li>
                 <li>
                   <a className="twitter" href="#">
-                    <i className="fa fa-twitter"></i>
+                  <FontAwesomeIcon icon={faTwitter} />
                   </a>
                 </li>
                 <li>
                   <a className="dribbble" href="#">
-                    <i className="fa fa-dribbble"></i>
-                  </a>
-                </li>
-                <li>
-                  <a className="linkedin" href="#">
-                    <i className="fa fa-linkedin"></i>
+                  <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </li>
               </ul>
@@ -65,11 +72,13 @@ function Footer() {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col text-center">
               <p className="copyright-text">
                 Copyright &copy; {new Date().getFullYear()} All Rights Reserved
                 by
-                <a href="#" className="copyright_owner">EI</a>
+                <a href="#" className="copyright_owner text-color-yellow">
+                  EI
+                </a>
               </p>
             </div>
           </div>

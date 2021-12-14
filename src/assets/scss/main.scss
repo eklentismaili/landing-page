@@ -6,8 +6,8 @@
 @import "./vendors/bootsrap";
 
 @font-face {
-  font-family: poppins;
-  src: url(./font/Poppins-Regular.ttf);
+  font-family: "Montserrat";
+  src: url(./font/Montserrat-Regular.ttf);
 }
 
 // @import "./layout/navigation";
@@ -20,9 +20,11 @@
 // @import "./components/cover";
 @import "./components/dropdown";
 @import "./components/slider";
+@import "./components/single-line";
 
 @import "./pages/home";
 @import "./pages/calendar";
+@import "./pages/privacy";
 
 @import "./theme/theme";
 // @import "./themes/admin";
@@ -32,7 +34,7 @@ html {
 }
 
 body {
-  font-family: poppins;
+  font-family: "Montserrat";
   width: 100vw !important;
   overflow-x: hidden;
   background-color: #f7f7f7;

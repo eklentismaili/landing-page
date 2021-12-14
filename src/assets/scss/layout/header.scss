@@ -94,13 +94,16 @@ li {
 }
 .mainNav .mainNavLink {
   display: block;
-  padding: 0.71875rem 0;
+  color: #000;
+  font-weight: 700;
+  padding: 0.71875rem 2rem;
   text-transform: capitalize;
+  font-size: 20px;
 }
 
 .mainNav .mainNavLink:hover {
   color: $yellow;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 @media (max-width: 767px) {

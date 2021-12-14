@@ -62,6 +62,15 @@ const NavBar = () => {
                   Calendar
                 </Link>
               </li>
+              <li>
+                <Link
+                  className="mainNavLink"
+                  to="/privacy"
+                  onClick={handleSidebar}
+                >
+                  Privacy
+                </Link>
+              </li>
             </ul>
           </nav>
           <button
