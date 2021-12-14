@@ -1,0 +1,22 @@
+.packages .col-md-4 {
+  .package-wrapper {
+    background: #ddd;
+
+    :hover {
+      background: $light-blue;
+      color: $yellow;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h6 {
+      padding: 1rem;
+    }
+  }
+}
+
+.packages .col-md-4:hover {
+  transform: scale(0.95);
+}

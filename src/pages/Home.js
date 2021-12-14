@@ -1,5 +1,5 @@
-import SingleLine from "../components/SingleLine";
 import { Link } from "react-router-dom";
+import SingleLine from "../components/SingleLine";
 import { Carousel } from "react-responsive-carousel";
 import Accordion from "react-bootstrap/Accordion";
 import homeBannerImg1 from "../assets/images/home-carousel/image-1.jpeg";
@@ -22,9 +22,9 @@ const Home = () => {
         <div className="container py-5">
           <div className="row">
             <div className="col d-flex flex-column align-items-center">
-              <h1>Alpine Albania Adventures</h1>
-              <SingleLine/>
-              <p className="py-5">
+              <h1 data-aos="fade-up">Alpine Albania Adventures</h1>
+              <SingleLine />
+              <p className="py-5" data-aos="fade-up">
                 Do not follow where the path may lead. Go instead where there is
                 no path and leave a trail
               </p>
@@ -37,6 +37,7 @@ const Home = () => {
                 infiniteLoop={true}
                 showArrows={false}
                 showStatus={false}
+                data-aos="fade-up"
               >
                 <div>
                   <img src={homeBannerImg1} />
@@ -58,23 +59,23 @@ const Home = () => {
       <section className="home-about py-5 text-center">
         <div className="container">
           <div className="row">
-            <h1 className="text-color-blue">About Us</h1>
+            <h1 className="text-color-blue" data-aos="fade-up">About Us</h1>
             <SingleLine />
-            <p className="pb-md-5 pb-3 text-color-blue">We live for the nature</p>
+            <p className="pb-md-5 pb-3 text-color-blue" data-aos="fade-up">
+              We live for the nature
+            </p>
             <div className="col-md-6">
-              <p className="text-start pb-3">
+              <p className="text-start pb-3" data-aos="fade-up">
                 Lorem ipsum dolor sit amet consectetur adipiscing elitsed do
                 esectetur adipiscing elitsed do eiusmoiusmod tempor incididunt
                 utlabore et dolore magna aliqua. Utenim ad minim veniam quis
                 nostrud exercitation ullamco laboris scing elitsed do esectetur
                 adipiscing elite nature.
               </p>
-              <Link to="/about">
-                Read More
-              </Link>
+              <Link to="/about" data-aos="fade-up">Read More</Link>
             </div>
             <div className="col-md-6 pt-4 pt-md-0">
-              <Accordion defaultActiveKey="0" flush>
+              <Accordion defaultActiveKey="0" flush  data-aos="fade-up">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>Our Mountains</Accordion.Header>
                   <Accordion.Body>
@@ -122,25 +123,26 @@ const Home = () => {
       <section className="home-latest-trips py-5 text-center">
         <div className="container">
           <div className="row">
-          <h2 className="text-color-blue text-center">Latest Trips</h2>
-              <SingleLine />
-              <p className="pb-3 text-color-blue text-center">
-                Explore the unexplored world
-              </p>
+            <h2 className="text-color-blue text-center"  data-aos="fade-up">Latest Trips</h2>
+            <SingleLine />
+            <p className="pb-3 text-color-blue text-center"  data-aos="fade-up">
+              Explore the unexplored world
+            </p>
             <div className="col-md-6">
-              <p className="text-start pb-3">
+              <p className="text-start pb-3"  data-aos="fade-up">
                 Lorem ipsum dolor sit amet consectetur adipiscing elitsed do
                 esectetur adipiscing elitsed do eiusmoiusmod tempor incididunt
                 utlabore et dolore magna aliqua. Utenim ad minim veniam quis
                 nostrud exercitation ullamco laboris scing elitsed do esectetur
                 adipiscing elite nature.
               </p>
-              <Link to="/about" className="text-center">
+              <Link to="/about" className="text-center"  data-aos="fade-up">
                 View All
               </Link>
             </div>
             <div className="col-md-6 text-start pt-4 pt-md-0">
               <Carousel
+               data-aos="fade-up"
                 className="carousel-trips-items"
                 showThumbs={false}
                 autoPlay={true}
@@ -249,42 +251,42 @@ const Home = () => {
           <SingleLine />
           <p className="pb-5 text-color-blue">We provide the best experience</p>
           <div className="row home-services-info">
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-3"  data-aos="fade-up">
               <img src={homeServicesImg1} />
               <h5 className="text-color-blue">Hike</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-3" data-aos="fade-up">
               <img src={homeServicesImg2} />
               <h5 className="text-color-blue">Raft</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-3" data-aos="fade-up">
               <img src={homeServicesImg3} />
               <h5 className="text-color-blue">Fly</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-3" data-aos="fade-up">
               <img src={homeServicesImg4} />
               <h5 className="text-color-blue">Ski</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-3" data-aos="fade-up">
               <img src={homeServicesImg5} />
               <h5 className="text-color-blue">Off Road</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-3" data-aos="fade-up">
               <img src={homeServicesImg6} />
               <h5 className="text-color-blue">Traks</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-3" data-aos="fade-up">
               <img src={homeServicesImg7} />
               <h5 className="text-color-blue">Explore</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-3" data-aos="fade-up">
               <img src={homeServicesImg8} />
               <h5 className="text-color-blue">Scuba Dive</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>

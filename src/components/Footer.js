@@ -13,16 +13,18 @@ function Footer() {
               <h6>Alpine Albania Adventures</h6>
               <ul className="footer-links footer-contact-links">
                 <li>
-                  <span>Address:</span> 
-                  <a href="#">Rruga e Durresit, Pallati 102 , Tirana, Albania</a>
+                  <span>Address:</span>
+                  <a href="#">
+                    Rruga e Durresit, Pallati 102 , Tirana, Albania
+                  </a>
                 </li>
                 <li>
-                  <span>Quick Contact:</span> 
-                <a href="#">+355 69 20 60 120</a>
+                  <span>Quick Contact:</span>
+                  <a href="#">+355 69 20 60 120</a>
                 </li>
                 <li>
                   <span>Email Us:</span>
-                <a href="#">info@albania-alpine-adventure.com</a>
+                  <a href="#">info@albania-alpine-adventure.com</a>
                 </li>
               </ul>
             </div>
@@ -52,17 +54,17 @@ function Footer() {
               <ul className="social-icons">
                 <li>
                   <a className="facebook" href="#">
-                  <FontAwesomeIcon icon={faFacebookF} />
+                    <FontAwesomeIcon icon={faFacebookF} />
                   </a>
                 </li>
                 <li>
                   <a className="twitter" href="#">
-                  <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faTwitter} />
                   </a>
                 </li>
                 <li>
                   <a className="dribbble" href="#">
-                  <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </li>
               </ul>
