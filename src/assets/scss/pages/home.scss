@@ -1,5 +1,5 @@
 .home-banner {
-  background-image: url("../images/download.jpeg");
+  background-image: url("../images/hd-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,6 +63,10 @@
   .home-services-info > div:nth-child(6),
   .home-services-info > div:nth-child(8) {
     border-right: none;
+  }
+
+  .home-services-info > div {
+    border-bottom: none;
   }
 
   .home-banner .carousel-wrapper {

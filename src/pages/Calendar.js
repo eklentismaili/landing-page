@@ -7,7 +7,9 @@ const Calendar = () => {
       <section className="calendar-app py-5">
         <div className="container py-5">
           <div className="row">
-            <h1 className="text-color-blue text-center" data-aos="fade-up">Our Incoming Trips</h1>
+            <h1 className="text-color-blue text-center" data-aos="fade-up">
+              Our Incoming Trips
+            </h1>
             <SingleLine></SingleLine>
             <div className="col calendar-comp pt-5" data-aos="fade-up">
               <Calend

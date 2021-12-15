@@ -3,3 +3,13 @@
   min-height: 450px;
   max-height: 450px;
 }
+
+.contact-us-form {
+  max-width: 650px;
+  margin: 0 auto;
+
+  .contact-us-button {
+    display: inline-block;
+    width: 100%;
+  }
+}

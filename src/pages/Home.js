@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SingleLine from "../components/SingleLine";
 import { Carousel } from "react-responsive-carousel";
 import Accordion from "react-bootstrap/Accordion";
+import { Form, Button } from "react-bootstrap";
 import homeBannerImg1 from "../assets/images/home-carousel/image-1.jpeg";
 import homeBannerImg2 from "../assets/images/home-carousel/image-2.jpeg";
 import homeBannerImg3 from "../assets/images/home-carousel/image-3.jpeg";
@@ -59,7 +60,9 @@ const Home = () => {
       <section className="home-about py-5 text-center">
         <div className="container">
           <div className="row">
-            <h1 className="text-color-blue" data-aos="fade-up">About Us</h1>
+            <h1 className="text-color-blue" data-aos="fade-up">
+              About Us
+            </h1>
             <SingleLine />
             <p className="pb-md-5 pb-3 text-color-blue" data-aos="fade-up">
               We live for the nature
@@ -72,10 +75,12 @@ const Home = () => {
                 nostrud exercitation ullamco laboris scing elitsed do esectetur
                 adipiscing elite nature.
               </p>
-              <Link to="/about" data-aos="fade-up">Read More</Link>
+              <Link to="/about" data-aos="fade-up">
+                Read More
+              </Link>
             </div>
             <div className="col-md-6 pt-4 pt-md-0">
-              <Accordion defaultActiveKey="0" flush  data-aos="fade-up">
+              <Accordion defaultActiveKey="0" flush data-aos="fade-up">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>Our Mountains</Accordion.Header>
                   <Accordion.Body>
@@ -123,26 +128,18 @@ const Home = () => {
       <section className="home-latest-trips py-5 text-center">
         <div className="container">
           <div className="row">
-            <h2 className="text-color-blue text-center"  data-aos="fade-up">Latest Trips</h2>
+            <h2 className="text-color-blue text-center" data-aos="fade-up">
+              Latest Trips
+            </h2>
             <SingleLine />
-            <p className="pb-3 text-color-blue text-center"  data-aos="fade-up">
+            <p className="pb-3 text-color-blue text-center" data-aos="fade-up">
               Explore the unexplored world
             </p>
-            <div className="col-md-6">
-              <p className="text-start pb-3"  data-aos="fade-up">
-                Lorem ipsum dolor sit amet consectetur adipiscing elitsed do
-                esectetur adipiscing elitsed do eiusmoiusmod tempor incididunt
-                utlabore et dolore magna aliqua. Utenim ad minim veniam quis
-                nostrud exercitation ullamco laboris scing elitsed do esectetur
-                adipiscing elite nature.
-              </p>
-              <Link to="/about" className="text-center"  data-aos="fade-up">
-                View All
-              </Link>
-            </div>
-            <div className="col-md-6 text-start pt-4 pt-md-0">
+            <div
+              className="col-md-6 text-start pt-4 pt-md-0"
+              data-aos="fade-up"
+            >
               <Carousel
-               data-aos="fade-up"
                 className="carousel-trips-items"
                 showThumbs={false}
                 autoPlay={true}
@@ -242,6 +239,18 @@ const Home = () => {
                 </div>
               </Carousel>
             </div>
+            <div className="col-md-6">
+              <p className="text-start pb-3" data-aos="fade-up">
+                Lorem ipsum dolor sit amet consectetur adipiscing elitsed do
+                esectetur adipiscing elitsed do eiusmoiusmod tempor incididunt
+                utlabore et dolore magna aliqua. Utenim ad minim veniam quis
+                nostrud exercitation ullamco laboris scing elitsed do esectetur
+                adipiscing elite nature.
+              </p>
+              <Link to="/about" className="text-center" data-aos="fade-up">
+                View All
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -251,7 +260,7 @@ const Home = () => {
           <SingleLine />
           <p className="pb-5 text-color-blue">We provide the best experience</p>
           <div className="row home-services-info">
-            <div className="col-6 col-md-3"  data-aos="fade-up">
+            <div className="col-6 col-md-3" data-aos="fade-up">
               <img src={homeServicesImg1} />
               <h5 className="text-color-blue">Hike</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -290,6 +299,43 @@ const Home = () => {
               <img src={homeServicesImg8} />
               <h5 className="text-color-blue">Scuba Dive</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="home-contact py-5">
+        <div className="container">
+          <div className="row">
+            <h1 className="text-color-blue text-center" data-aos="fade-up">
+              Contact Us
+            </h1>
+            <SingleLine />
+            <p className="pb-5 text-color-blue text-center" data-aos="fade-up">
+              Get in touch with the best
+            </p>
+            <div className="col-12" data-aos="fade-up">
+              <Form className="contact-us-form">
+                <Form.Group className="mb-3" controlId="email">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" />
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="phone">
+                  <Form.Label>Phone</Form.Label>
+                  <Form.Control type="phone" placeholder="Phone" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="message">
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+                <Button
+                  variant="primary"
+                  type="submit"
+                  className="text-center contact-us-button"
+                >
+                  Submit
+                </Button>
+              </Form>
             </div>
           </div>
         </div>

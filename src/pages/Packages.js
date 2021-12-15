@@ -10,7 +10,9 @@ const Packages = () => {
     <div className="packages pages">
       <div className="container py-5">
         <div className="row">
-          <h2 className="text-color-blue text-center" data-aos="fade-up">Our Packages</h2>
+          <h2 className="text-color-blue text-center" data-aos="fade-up">
+            Our Packages
+          </h2>
           <SingleLine />
           <p className="pb-5 text-center" data-aos="fade-up">
             Contact us for more information about our packages.

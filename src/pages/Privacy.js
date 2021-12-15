@@ -6,8 +6,10 @@ const Privacy = () => {
       <div className="container py-5">
         <div className="row">
           <div className="col-12">
-            <h2 className="pt-5 text-center text-color-blue" data-aos="fade-up">Privacy Policy</h2>
-            <SingleLine/>
+            <h2 className="pt-5 text-center text-color-blue" data-aos="fade-up">
+              Privacy Policy
+            </h2>
+            <SingleLine />
             <p className="pt-5" data-aos="fade-up">
               Your privacy is important to us. It is Our policy to respect your
               privacy and comply with any applicable law and regulation
@@ -21,8 +23,8 @@ const Privacy = () => {
             <h4 className="pt-3 text-center text-color-blue" data-aos="fade-up">
               Information We Collect
             </h4>
-            <SingleLine/>
-            <p data-aos="fade-up"className="pt-3">
+            <SingleLine />
+            <p data-aos="fade-up" className="pt-3">
               When you visit our website, our servers may automatically log the
               standard data provided by your web browser. It may include your
               device’s Internet Protocol (IP) address, your browser type and
@@ -58,8 +60,10 @@ const Privacy = () => {
               or for archiving purposes in the public interest, scientific, or
               historical research purposes or statistical purposes.{" "}
             </p>
-            <h4 className="pt-3 text-center text-color-blue" data-aos="fade-up">Use of Cookies</h4>
-            <SingleLine/>
+            <h4 className="pt-3 text-center text-color-blue" data-aos="fade-up">
+              Use of Cookies
+            </h4>
+            <SingleLine />
             <p className="pt-3" data-aos="fade-up">
               We use “cookies” to collect information about you and your
               activity across our site. A cookie is a small piece of data that
@@ -70,14 +74,16 @@ const Privacy = () => {
             <h4 className="pt-3 text-center text-color-blue" data-aos="fade-up">
               Limits of Our Policy
             </h4>
-            <SingleLine/>
+            <SingleLine />
             <p className="pt-3" data-aos="fade-up">
               Our website may link to external sites that are not operated by
               us. Please be aware that we have no control over the content and
               policies of those sites, and cannot accept responsibility or
               liability for their respective privacy practices.{" "}
             </p>
-            <h4 className="pt-3 text-center text-color-blue" data-aos="fade-up">Contact Us</h4>
+            <h4 className="pt-3 text-center text-color-blue" data-aos="fade-up">
+              Contact Us
+            </h4>
             <SingleLine />
             <p className="pt-3" data-aos="fade-up">
               For any questions or concerns regarding your privacy, you may
