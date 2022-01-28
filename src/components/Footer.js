@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,17 +15,17 @@ function Footer() {
               <ul className="footer-links footer-contact-links">
                 <li>
                   <span>Address:</span>
-                  <a href="#">
-                    Rruga e Durresit, Pallati 102 , Tirana, Albania
-                  </a>
+                  <a href="#">Tirana, Albania</a>
                 </li>
                 <li>
                   <span>Quick Contact:</span>
-                  <a href="#">+355 69 20 60 120</a>
+                  <a href="#">+355 69 00000000</a>
                 </li>
                 <li>
                   <span>Email Us:</span>
-                  <a href="#">info@albania-alpine-adventure.com</a>
+                  <a href="mailto: eklentismaili.dev@gmail.com">
+                    eklentismaili.dev@gmail.com
+                  </a>
                 </li>
               </ul>
             </div>
@@ -33,18 +34,13 @@ function Footer() {
               <h6>Site Links</h6>
               <ul className="footer-links">
                 <li>
-                  <a href="http://scanfcode.com/home/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="http://scanfcode.com/about/">About Us</a>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <a href="http://scanfcode.com/contact/">Contact Us</a>
-                </li>
-                <li>
-                  <a href="http://scanfcode.com/privacy-policy/">
-                    Privacy Policy
-                  </a>
+                  <Link to="/contact">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -78,8 +74,12 @@ function Footer() {
               <p className="copyright-text">
                 Copyright &copy; {new Date().getFullYear()} All Rights Reserved
                 by
-                <a href="#" className="copyright_owner text-color-yellow">
-                  EI
+                <a
+                  href="https://al.linkedin.com/in/eklent-ismaili-b936001b6"
+                  target="_blank"
+                  className="copyright_owner text-color-yellow"
+                >
+                  Eklent Ismaili
                 </a>
               </p>
             </div>
