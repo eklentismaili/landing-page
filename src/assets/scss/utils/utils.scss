@@ -13,6 +13,7 @@
   width: 100%;
   z-index: 3;
   min-height: 100vh;
+  overflow-x: hidden !important;
   > :after {
     position: absolute;
     content: "";
